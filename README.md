@@ -35,13 +35,23 @@
 ## Create a BigQuery Table:
 &emsp;&emsp;BigQuery is a serverless, low-cost enterprise data warehouse. In this, we create schema for the table  and the data is stored in the tables.
 
-To Create a table that hold all of the IoT heartrate data:
- 1. From the Cloud console select BigQuery.
- 2. Click on three dots next to the project ID --> select Create Dataset.
+ &ensp;To Create a table that hold all of the IoT heartrate data:
+ 1. From the **Cloud Console** --> select **BigQuery.**
+ 2. Click on three dots next to the project ID --> select **Create Dataset.**
  3. Enter 'heartRateData’ for the Dataset and select the location where it will be stored. 
- 4. Click on the three dots next to the Dataset just created ,which opens the editor  to create a new  table.
- 5. For Source Data select create empty table. For Destination table name ,enter the table name as 'heartRateDataTable'.
- 6. Under Schema,click on the Add field to add the fields for the table and select the appropriate datatype for each field. Click on the Create Table button.
+ 4. Click on the three dots next to the Dataset just created, which opens the editor  to create a new  table.
+ 5. For **Source Data** select create empty table. For Destination table name ,enter the table name as 'heartRateDataTable'.
+ 6. Under **Schema**, click on the **Add field** to add the fields for the table and select the appropriate datatype for each field. Click on the **Create Table** button.
 
 ## Create a Pub/Sub Topic and Subscription:
+&emsp;&emsp;Pub/Sub is a real time messaging service  used for ingesting data. It is perfect for handling incoming IoT messages and then allowing downstream systems to process them.Subscription allow other Google Cloud services to access these messages.
+1. From the **Cloud Console --> Select Pub/Sub-->  Topics.**
+2. If  you see Enable API prompt, click the **Enable API button.**
+3. Select **Create Topic** and enter 'heartratedata' as topic name  and click **Create.**
+4. Create a Subscription for the topic by clicking on the three dots to create a new subscription-->**Create Subscription.** 
+5. Enter the Subscription name 'heartratedata'.
  
+We have now The Pub/Sub subscription to pull Iot messages from.
+
+## Use a Dataflow Template:
+&emsp;&emsp;Dataflow is cloud based data processing service used for batch and real time data.A Dataflow template will be used to create a process that monitors a Pub/Sub topic for incoming messages and then moves them to BigQuery. The data from the Dataflow will be stored in temporary file,and the location will be provided in cloud storage.
