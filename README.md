@@ -122,6 +122,24 @@ The Registry is now ready for the devices to be added.
    
    >
    > **python checkHeartRate.py --project_id=myproject --registry_id=myregistry --device_id=mydevice**
+   > 
+
+ * After sucessful execution, a terminal window with the heart rate data results will be seen every 10 seconds.
+
+  ## Check the Data is Flowing
+  &emsp;&emsp;We need to make sure that the data is flowing into BigQuery Table.
+  * From the Cloud Console Menu -->Select BigQuery .
+  * Click on the arrow next to Project name, click on the Dataset, then on the table.
+  * Click on the **Query Table** button.
+  * Run an SQL statement , that selects all the data from the BigQuery table.
+  *  Click **RUN QUERY** button.
+
+ If you see the results then the data is flowing.
+ 
+  ## Visualize the data
+   &emsp;&emsp;
+
+
 
   
 
