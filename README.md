@@ -24,7 +24,24 @@
 ## Getting Started:
 &emsp; &emsp; We need to have a google account, to use Google Cloud Platform. If you don't have a google account, you must create one. Sign-in to the Google Cloud Console.
 
-### 1. Select/Create a project.
+* **Environment Setup.**
+ 
 &emsp; &emsp; You can use default project ("My First Project") or create a new Google Cloud project on the project selector page. Through the project, you can have access to all the resources of Google Cloud Platform. Create a Project with the name 'IoT-heartrate’, The project ID is unique name across the Google Cloud.
 
+* **Enable APIs.**
+   
 &emsp; &emsp; Next, enabling the APIs of the Pub/Sub, IoT Core, Dataflow, Compute Engine, which are used in this project. To enable APIs, select and click on APIs & Services from Cloud Console menu. Search for the <b> Cloud Pub/Sub API </b> and click on the result and <b>Enable API</b>. Follow the same steps for the other above mentioned APIs.
+
+## Create a BigQuery Table:
+&emsp;&emsp;BigQuery is a serverless, low-cost enterprise data warehouse. In this, we create schema for the table  and the data is stored in the tables.
+
+To Create a table that hold all of the IoT heartrate data:
+ 1. From the Cloud console select BigQuery.
+ 2. Click on three dots next to the project ID --> select Create Dataset.
+ 3. Enter 'heartRateData’ for the Dataset and select the location where it will be stored. 
+ 4. Click on the three dots next to the Dataset just created ,which opens the editor  to create a new  table.
+ 5. For Source Data select create empty table. For Destination table name ,enter the table name as 'heartRateDataTable'.
+ 6. Under Schema,click on the Add field to add the fields for the table and select the appropriate datatype for each field. Click on the Create Table button.
+
+## Create a Pub/Sub Topic and Subscription:
+ 
