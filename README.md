@@ -1,7 +1,7 @@
 # Google Cloud IoT core Project-Streaming Heartrate into Google Cloud.
 
 ## Introduction
-&emsp; &emsp; Internet of Things(Iot ) refers to a system that are connected and can transmit data over the wireless network (internet), without user involvement. IoT devices include wireless sensors, software and devices. This is expanding rapidly in the present years.
+&emsp; &emsp; Internet of Things(IoT) refers to a system that are connected and can transmit data over the wireless network (internet), without user involvement. IoT devices include wireless sensors, software and devices. This is expanding rapidly in the present years.
 
 &emsp; &emsp; Google Cloud Platform is an Infrastructure as a Service (ISAS), in which the cloud maintains all the core infrastructure, hardware, software and servers in the cloud on behalf of the user. All services used in the Google Cloud are reliable and scalable.
 
@@ -137,7 +137,13 @@ The Registry is now ready for the devices to be added.
  If you see the results then the data is flowing.
  
   ## Visualize the data
-   &emsp;&emsp;
+   &emsp;&emsp;The Query results ,which  are retrieved from RUN Query can be saved in either EXcel file or Google sheets by clicking 'SAVE RESULTS'.
+   * Highlight the two columns that cointain the time collected and heartrate. 
+   * Select Insert and select chart 'Clustered Column Chart'.
+   * The chart should now display a visualization of heart over time.
+
+
+   
 
 
 
