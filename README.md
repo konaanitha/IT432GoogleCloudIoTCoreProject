@@ -87,7 +87,7 @@ The Registry is now ready for the devices to be added.
 &emsp;&emsp;From the Cloud Console , Select IoT Core
 * Click on the **Devices** tab and Click **Create A Device**.
 * Enter 'raspberryHeartRate' as DeviceID.
-* For Public key Format select ES256.
+* For Public key Format select **ES256.**
 * We can choose either manual,copy and paste the value of the key or upload the public key file.
 
  The following commands are used to generate ES 256 key pair in Google CLoud Shell
@@ -98,8 +98,32 @@ The Registry is now ready for the devices to be added.
   
   Once the Keys are generated, open the editor, copy the public key and add to the authentication section of the device.
   
+  ## Configure the Raspberry PI:
+  &emsp;&emsp; The following are the steps followed in configuring the Pi
+  1. Connect the monitor,keyboard,mouse, heartrate Sensor and finally power adapter.
+  2. After the Pi boots up,select the Raspian operating system .Select the desired language and install it.
+  3. Click on the WI-FI icon --> select a network and enter the password for the network. 
+  4.  Click on the Raspberry Icon-->Preferences-->Raspberry Pi Configuration.
+  5.  Select **Interface** tab and enable **SSH**.
+  6.  From the Localization tab, set the Locale and TimeZone.
+  7.  Allow the Pi to Reboot.
+  8.  Make sure all of the software on the Pi is upto date.
+  9.  Open the terminal and type 'Ifconfig' command, which gives the IP address of the Pi.
+  10.  Install Putty in your local machine and make a connection to Raspberry Pi wireless by typing the IPaddress of Pi in the host name or Ip address.
+  
+  ## Start the Data
+  ### Getting Streaming data from a Raspberry Pi
+  &emsp;&emsp; After establishing the connection of Pi from the local machine using Putty enter Username and password.
+  * First, move to the home directory of Raspberry pi with the following:		
+  
+     > cd /home/pi/iotcore-heartrate 
+     > 
+   * Run the following script by changing to which match the project.  
+   
+   >
+   > **python checkHeartRate.py --project_id=myproject --registry_id=myregistry --device_id=mydevice**
 
- 
+  
 
 
 
