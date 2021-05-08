@@ -54,4 +54,9 @@
 We have now The Pub/Sub subscription to pull Iot messages from.
 
 ## Use a Dataflow Template:
-&emsp;&emsp;Dataflow is cloud based data processing service used for batch and real time data.A Dataflow template will be used to create a process that monitors a Pub/Sub topic for incoming messages and then moves them to BigQuery. The data from the Dataflow will be stored in temporary file,and the location will be provided in cloud storage.
+&emsp;&emsp;Dataflow is cloud based data processing service used for batch and real time data.A Dataflow template will be used to create a process that monitors a Pub/Sub topic for incoming messages and then moves them to BigQuery. The data from the Dataflow will be stored in temporary file,and the location will be provided in Cloud Storage.
+
+To Create a file in Cloud Storage:
+* From the Cloud Console Menu Select **Storage-->Browser -->click on Create Bucket.**
+* Enter the **Name** of the bucket . The Bucket name is unique across the Google Cloud.
+* Select the region where your project resides and click **Create Bucket** button.
