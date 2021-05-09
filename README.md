@@ -44,7 +44,7 @@
  5. For **Source Data** select create empty table. For Destination table name ,enter the table name as 'heartRateDataTable'.
  6. Under **Schema**, click on the **Add field** to add the fields for the table and select the appropriate datatype for each field. Click on the **Create Table** button.
  
- * [Create Table.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/create%20table.png) {target= "_blank"}
+ * [Create Table.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/create%20table.png){:target="_blank"}
  <a href="https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/create%20table.png" target="_blank">Create table.png </a>
 
 ## Create a Pub/Sub Topic and Subscription
