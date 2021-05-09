@@ -142,6 +142,9 @@ The Registry is now ready for the devices to be added.
    * Select Insert and select chart 'Clustered Column Chart'.
    * The chart should now display a visualization of heart over time.
 
+ ## Summary:
+ &emsp;&emsp; In this, I have used Google IOt core , a fully managed device to secure IoT devices , the messages which are streamed form the IoT device are published in Pub/Sub topic . I created a Dataflow job from Template , that creates a Pipeline stream which reads the messages from the Pub/Sub and writes into BigQuery Table.The Query results from the BigQuery  table are saved into Excel or Google sheets for quick data visualisation.
+
 
    
 
