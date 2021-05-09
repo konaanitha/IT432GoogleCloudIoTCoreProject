@@ -46,6 +46,8 @@
  
  * [Create Table.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/create%20table.png)
  
+ * [Table Schema.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/heartratedatatable%20schema.PNG) 
+ 
 ## Create a Pub/Sub Topic and Subscription
 &emsp;&emsp;Pub/Sub is a real time messaging service  used for ingesting data. It is perfect for handling incoming IoT messages and then allowing downstream systems to process them.Subscription allow other Google Cloud services to access these messages.
 1. From the **Cloud Console --> Select Pub/Sub-->  Topics.**
@@ -79,7 +81,7 @@ We have now The Pub/Sub subscription to pull Iot messages from.
 
 * [Create Dataflow Job.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/create_dataflow%20job.PNG)
 
-* [Dataflow JOb sucess.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/dataflowjob%20success.PNG)
+* [Dataflow Job sucess.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/dataflowjob%20success.PNG)
 
 The Dataflow job has started and it made a connection between Pub/Sub and BigQuery.
 
@@ -92,6 +94,8 @@ The Dataflow job has started and it made a connection between Pub/Sub and BigQue
 * Select Region ,disable HTTP in Protocol section.
 * Select the Pub/Sub topic which is created in Pub/Sub topic earlier and click on **Create** button.
 
+* [Create Rergistry.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/createregistry.PNG)
+
 The Registry is now ready for the devices to be added.
 
 ## Adding device to Registry
@@ -101,7 +105,9 @@ The Registry is now ready for the devices to be added.
 * For Public key Format select **ES256.**
 * We can choose either manual,copy and paste the value of the key or upload the public key file.
 
- The following commands are used to generate ES 256 key pair in Google CLoud Shell
+* [Create Device.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/createdevice.PNG
+
+*  The following commands are used to generate ES 256 key pair in Google CLoud Shell
  
  > openssl ecparam -genkey -name prime256v1 -noout -out ec_private.pem
  > 
@@ -141,6 +147,8 @@ The Registry is now ready for the devices to be added.
   &emsp;&emsp;We need to make sure that the data is flowing into BigQuery Table.
   * From the Cloud Console Menu -->Select BigQuery .
   * Click on the arrow next to Project name, click on the Dataset, then on the table.
+
+* [Heartratetable.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/heartratetable%20data.PNG)
   * Click on the **Query Table** button.
   * Run an SQL statement , that selects all the data from the BigQuery table.
   *  Click **RUN QUERY** button.
