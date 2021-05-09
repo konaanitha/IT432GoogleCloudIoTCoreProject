@@ -58,7 +58,7 @@
 
 * [Create Pub/Sub Subscription.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/create_Pub-Sub_subscription.PNG)
  
-We have now The Pub/Sub subscription to pull Iot messages from.
+We have now The Pub/Sub subscription to pull IoT messages from.
 
 ## Use a Dataflow Template
 &emsp;&emsp;Dataflow is cloud based data processing service used for batch and real time data.A Dataflow template will be used to create a process that monitors a Pub/Sub topic for incoming messages and then moves them to BigQuery. The data from the Dataflow will be stored in temporary file,and the location will be provided in Cloud Storage.
@@ -86,7 +86,7 @@ We have now The Pub/Sub subscription to pull Iot messages from.
 The Dataflow job has started and it made a connection between Pub/Sub and BigQuery.
 
 ## Create IoT Core Registry
-&emsp;&emsp; Google cloud Iot core is a fully managed service which is used for securely connecting and management of IoT devices. It is a gateway to Google Cloud Platform.
+&emsp;&emsp; Google cloud IoT Core is a fully managed service which is used for securely connecting and management of IoT devices. It is a gateway to Google Cloud Platform.
 * From the **Cloud Console --> IoT Core.**
 * If you see Enable prompt ,click Enable API button.
 * Create a Registry for the IoT device. 
@@ -166,23 +166,8 @@ The Registry is now ready for the devices to be added.
    * [Data Visualization in Excel sheet](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/visualizeData.PNG)
 
  ## Summary:
- &emsp;&emsp; In this, I have used Google IOt core , a fully managed device to secure IoT devices , the messages which are streamed form the IoT device are published in Pub/Sub topic . I created a Dataflow job from Template , that creates a Pipeline stream which reads the messages from the Pub/Sub and writes into BigQuery Table.The Query results from the BigQuery  table are saved into Excel or Google sheets for quick data visualisation.
+ &emsp;&emsp; In this, I have used Google IOT Core , a fully managed device to secure IoT devices , the messages which are streamed form the IoT device are published in Pub/Sub topic . I created a Dataflow job from Template , that creates a Pipeline stream which reads the messages from the Pub/Sub and writes into BigQuery Table.The Query results from the BigQuery  table are saved into Excel or Google sheets for quick data visualisation.
  
  ## References:
  * [Raspberry Pi Getting started/Setup](https://www.youtube.com/watch?v=BpJCAafw2qE)
  * [Tutorial on building IoT application Using Google Cloud Platform](https://iot4beginners.com/tutorial-on-google-iot-core-with-raspberry-pi-to-visualize-the-sensor-data/)
-
-
-   
-
-
-
-  
-
-
-
-
-
-
-
-
