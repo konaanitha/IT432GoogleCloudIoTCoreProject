@@ -41,7 +41,7 @@
  2. Click on three dots next to the project ID --> select **Create Dataset.**
  3. Enter 'heartRateData’ for the Dataset and select the location where it will be stored. 
  4. Click on the three dots next to the Dataset just created, which opens the editor  to create a new  table.
- 5. For **Source Data** select create empty table. For Destination table name ,enter the table name as 'heartRateDataTable'.
+ 5. For **Source Data** select create empty table. For Destination table name, enter the table name as 'heartRateDataTable'.
  6. Under **Schema**, click on the **Add field** to add the fields for the table and select the appropriate datatype for each field. Click on the **Create Table** button.
  
  * [Create Table.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/create%20table.png)
