@@ -49,7 +49,7 @@
  * [Table Schema.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/heartratedatatable%20schema.PNG) 
  
 ## Create a Pub/Sub Topic and Subscription
-&emsp;&emsp;Pub/Sub is a real time messaging service  used for ingesting data. It is perfect for handling incoming IoT messages and then allowing downstream systems to process them.Subscription allow other Google Cloud services to access these messages.
+&emsp;&emsp;Pub/Sub is a real time messaging service  used for ingesting data. It is perfect for handling incoming IoT messages and then allowing downstream systems to process them. Subscription allow other Google Cloud services to access these messages.
 1. From the **Cloud Console --> Select Pub/Sub-->  Topics.**
 2. If  you see Enable API prompt, click the **Enable API button.**
 3. Select **Create Topic** and enter 'heartratedata' as topic name  and click **Create.**
