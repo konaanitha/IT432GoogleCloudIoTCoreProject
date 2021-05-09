@@ -142,6 +142,7 @@ The Registry is now ready for the devices to be added.
    > 
 
  After sucessful execution, a terminal window with the heart rate data results will be seen every 10 seconds.
+ * [Data Publish.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/data_publish.png)
 
   ## Check the Data is Flowing
   &emsp;&emsp;We need to make sure that the data is flowing into BigQuery Table.
@@ -153,7 +154,7 @@ The Registry is now ready for the devices to be added.
  4. Run an SQL statement, that selects all the data from the BigQuery table.
  5. Click **RUN QUERY** button.
 
-* [Query Results](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Query%20results.PNG)
+* [Query Results.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Query%20results.PNG)
 
  If you see the results then the data is flowing from IoT device to BigQuery table.
  
@@ -163,7 +164,7 @@ The Registry is now ready for the devices to be added.
  2. Select Insert and select chart 'Clustered Column Chart'.
  3. The chart should now display a visualization of heartrate over timecollected.
    
-   * [Data Visualization in Excel sheet](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/visualizeData.PNG)
+   * [Data Visualization in Excel sheet.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/visualizeData.PNG)
 
  ## Summary:
  &emsp;&emsp; In this, I have used Google IOT Core, a fully managed device to secure IoT devices, the messages which are streamed form the IoT device are published in Pub/Sub topic. I have created a Dataflow job from Template, that creates a Pipeline stream which reads the messages from the Pub/Sub and writes into a BigQuery Table. The Query results from the BigQuery table are saved into Excel document for quick data visualization.
