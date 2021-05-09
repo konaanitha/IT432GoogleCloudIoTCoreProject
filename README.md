@@ -1,4 +1,5 @@
-# Google Cloud IoT core Project-Streaming Heartrate into Google Cloud.
+# Google Cloud IoT core Project
+# Streaming Heartrate into Google Cloud Using IoT Core.
 
 ## Introduction
 &emsp; &emsp; Internet of Things(IoT) refers to a system that are connected and can transmit data over the wireless network (internet), without user involvement. IoT devices include wireless sensors, software and devices. This is expanding rapidly in the present years.
