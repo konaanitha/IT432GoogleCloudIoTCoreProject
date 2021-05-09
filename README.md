@@ -131,27 +131,27 @@ The Registry is now ready for the devices to be added.
   ## Start the Data
   ### Getting Streaming data from a Raspberry Pi
   &emsp;&emsp; After establishing the connection of Pi from the local machine, using Putty enter Username and password.
-  * First, move to the home directory of Raspberry Pi with the following:		
+  1. First, move to the home directory of Raspberry Pi with the following:		
   
      > cd /home/pi/iotcore-heartrate 
      > 
-   * Run the following script by changing the details, which matches the project.  
+   2. Run the following script by changing the details, which matches the project.  
    
    >
    > **python checkHeartRate.py --project_id=myproject --registry_id=myregistry --device_id=mydevice**
    > 
 
- * After sucessful execution, a terminal window with the heart rate data results will be seen every 10 seconds.
+ After sucessful execution, a terminal window with the heart rate data results will be seen every 10 seconds.
 
   ## Check the Data is Flowing
   &emsp;&emsp;We need to make sure that the data is flowing into BigQuery Table.
-  * From the Cloud Console Menu --> Select BigQuery.
-  * Click on the arrow next to Project name, click on the Dataset, then on the table.
+ 1. From the Cloud Console Menu --> Select BigQuery.
+ 2. Click on the arrow next to Project name, click on the Dataset, then on the table.
 
 * [Heartratetable.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/heartratetable%20data.PNG)
-  * Click on the **Query Table** button.
-  * Run an SQL statement, that selects all the data from the BigQuery table.
-  *  Click **RUN QUERY** button.
+ 3. Click on the **Query Table** button.
+ 4. Run an SQL statement, that selects all the data from the BigQuery table.
+ 5. Click **RUN QUERY** button.
 
 * [Query Results](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Query%20results.PNG)
 
@@ -159,9 +159,9 @@ The Registry is now ready for the devices to be added.
  
   ## Visualize the data
    &emsp;&emsp;The Query results, which are retrieved from RUN Query can be saved in either Excel file or Google sheets, by clicking 'SAVE RESULTS'.
-   * Highlight the two columns that cointain the time collected and heartrate. 
-   * Select Insert and select chart 'Clustered Column Chart'.
-   * The chart should now display a visualization of heartrate over timecollected.
+ 1. Highlight the two columns that cointain the time collected and heartrate.
+ 2. Select Insert and select chart 'Clustered Column Chart'.
+ 3. The chart should now display a visualization of heartrate over timecollected.
    
    * [Data Visualization in Excel sheet](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/visualizeData.PNG)
 
