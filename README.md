@@ -4,7 +4,7 @@
 ## Introduction
 &emsp; &emsp; Internet of Things(IoT) refers to a system that are connected and can transmit data over the wireless network (internet), without user involvement. IoT devices include wireless sensors, software and devices. This is expanding rapidly in the present years.
 
-&emsp; &emsp; Google Cloud Platform is an Infrastructure as a Service (ISAS), in which the cloud maintains all the core infrastructure, hardware, software and servers in the cloud on behalf of the user. All services used in the Google Cloud are reliable and scalable.
+&emsp; &emsp; Google Cloud Platform is an Infrastructure as a Service (IaaS), in which the cloud maintains all the core infrastructure, hardware, software and servers in the cloud on behalf of the user. All services used in the Google Cloud are reliable and scalable.
 
 ##  Overview
 &emsp; &emsp; Here Raspberry PI, an Iot device captures the heartrate, with the IoT Core securely publish the data to Pub/Sub topic, which is a message queue, where the data will be transferred into a data warehouse with the help of a data pipeline created by the components of Google Cloud. The result data can be visualized using data visualization tools such as Excell or google sheets, etc.,.
@@ -20,7 +20,7 @@
 ## Software
 1. Raspeberry OS/Raspberry Pi ImageViewer v1.6
 2. Putty for Windows/Terminal for Mac
-3. Excell or Google sheets
+3. Excel or Google sheets
 
 ## Getting Started:
 &emsp; &emsp; We need to have a google account, to use Google Cloud Platform. If you don't have a google account, you must create one. Sign-in to the Google Cloud Console.
