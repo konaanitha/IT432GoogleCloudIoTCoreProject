@@ -45,6 +45,7 @@
  6. Under **Schema**, click on the **Add field** to add the fields for the table and select the appropriate datatype for each field. Click on the **Create Table** button.
  
  * [Create Table.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/create%20table.png)
+ 
 ## Create a Pub/Sub Topic and Subscription
 &emsp;&emsp;Pub/Sub is a real time messaging service  used for ingesting data. It is perfect for handling incoming IoT messages and then allowing downstream systems to process them.Subscription allow other Google Cloud services to access these messages.
 1. From the **Cloud Console --> Select Pub/Sub-->  Topics.**
@@ -52,6 +53,8 @@
 3. Select **Create Topic** and enter 'heartratedata' as topic name  and click **Create.**
 4. Create a Subscription for the topic by clicking on the three dots to create a new subscription-->**Create Subscription.** 
 5. Enter the Subscription name 'heartratedata'.
+
+* [Create Pub/Sub Subscription.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/create_Pub-Sub_subscription.PNG)
  
 We have now The Pub/Sub subscription to pull Iot messages from.
 
@@ -63,6 +66,8 @@ We have now The Pub/Sub subscription to pull Iot messages from.
 * Enter the **Name** of the bucket . The Bucket name is unique across the Google Cloud.
 * Select the region where your project resides and click **Create Bucket** button.
 
+* [Create Bucket.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/create%20%20bucket.PNG)
+
  **To Create a Dataflow Job:**
 * From the Cloud Console Select Dataflow -->Jobs.
 *  Click on on **Create Job from Template.**
@@ -71,6 +76,10 @@ We have now The Pub/Sub subscription to pull Iot messages from.
 *  Select the dataflow template as **'Pub/sub Subscription to Big Query’.**
 *  Enter the details in the other fields ,making sure they align with the name of the Pub/Sub subscription,BigQuery dataset and tablename and Cloud Storage file.
 *  Click on **RUN JOB.**
+
+* [Create Dataflow Job.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/create_dataflow%20job.PNG)
+
+* [Dataflow JOb sucess.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/dataflowjob%20success.PNG)
 
 The Dataflow job has started and it made a connection between Pub/Sub and BigQuery.
 
