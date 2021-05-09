@@ -170,6 +170,7 @@ The Registry is now ready for the devices to be added.
  
  ## References:
  * [Raspberry Pi Getting started/Setup](https://www.youtube.com/watch?v=BpJCAafw2qE)
+ * [Tutorial on building IoT application Using Google Cloud Platform](https://iot4beginners.com/tutorial-on-google-iot-core-with-raspberry-pi-to-visualize-the-sensor-data/)
 
 
    
