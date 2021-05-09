@@ -27,7 +27,7 @@
 
 * **Environment Setup.**
 
- &emsp; &emsp; You can use default project ("My First Project") or create a new Google Cloud project on the project selector page. Through the project, you can have access to all the resources of Google Cloud Platform. Create a Project with the name 'IoT-heartrate’, The project ID is unique name across the Google Cloud.
+ &emsp; &emsp; You can use default project ("My First Project") or create a new Google Cloud project on the project selector page. Through the project, you can have access to all the resources of Google Cloud Platform. Create a Project with the name 'iot432iotheartrate’, The project ID is unique name across the Google Cloud.
 
 * **Enable APIs.**
 
