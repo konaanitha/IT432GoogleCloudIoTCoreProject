@@ -36,7 +36,7 @@
 ## Create a BigQuery Table
 &emsp;&emsp;BigQuery is a serverless, low-cost enterprise data warehouse. In this, we create schema for the table  and the data is stored in the tables.
 
- &ensp;To Create a table that hold all of the IoT heartrate data:
+ &ensp;To create a table that hold all of the IoT heartrate data:
  1. From the **Cloud Console** --> select **BigQuery.**
  2. Click on three dots next to the project ID --> select **Create Dataset.**
  3. Enter 'heartRateData’ for the Dataset and select the location where it will be stored. 
