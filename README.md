@@ -64,20 +64,20 @@ We have now The Pub/Sub subscription to pull IoT messages from.
 &emsp;&emsp;Dataflow is cloud based data processing service used for batch and real time data. A Dataflow template will be used to create a process that monitors a Pub/Sub topic for incoming messages and then moves them to BigQuery. The data from the Dataflow will be stored in temporary file, and the location will be provided in Cloud Storage.
 
  **To Create a file in Cloud Storage:**
-* From the Cloud Console Menu Select **Storage-->Browser -->click on Create Bucket.**
-* Enter the **Name** of the bucket . The Bucket name is unique across the Google Cloud.
-* Select the region where your project resides and click **Create Bucket** button.
+1. From the Cloud Console Menu Select **Storage-->Browser -->click on Create Bucket.**
+2. Enter the **Name** of the bucket . The Bucket name is unique across the Google Cloud.
+3. Select the region where your project resides and click **Create Bucket** button.
 
 * [Create Bucket.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/create%20%20bucket.PNG)
 
  **To Create a Dataflow Job:**
-* From the Cloud Console Select Dataflow -->Jobs.
-*  Click on on **Create Job from Template.**
-*  Enter 'heart-streaming'as Job name.
-*  Select the region make sure it matches the region where the project resides.
-*  Select the dataflow template as **'Pub/sub Subscription to Big Query’.**
-*  Enter the details in the other fields ,making sure they align with the name of the Pub/Sub subscription,BigQuery dataset and tablename and Cloud Storage file.
-*  Click on **RUN JOB.**
+1. From the Cloud Console Select Dataflow -->Jobs.
+2. Click on on **Create Job from Template.**
+3. Enter 'heart-streaming'as Job name.
+4. Select the region make sure it matches the region where the project resides.
+5. Select the dataflow template as **'Pub/sub Subscription to Big Query’.**
+6. Enter the details in the other fields ,making sure they align with the name of the Pub/Sub subscription,BigQuery dataset and tablename and Cloud Storage file.
+7. Click on **RUN JOB.**
 
 * [Create Dataflow Job.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/create_dataflow%20job.PNG)
 
@@ -87,12 +87,12 @@ The Dataflow job has started and it made a connection between Pub/Sub and BigQue
 
 ## Create IoT Core Registry
 &emsp;&emsp; Google cloud IoT Core is a fully managed service which is used for securely connecting and management of IoT devices. It is a gateway to Google Cloud Platform.
-* From the **Cloud Console --> IoT Core.**
-* If you see Enable prompt ,click Enable API button.
-* Create a Registry for the IoT device. 
-* Enter 'heartrate' for the RegistryID.
-* Select Region ,disable HTTP in Protocol section.
-* Select the Pub/Sub topic which is created in Pub/Sub topic earlier and click on **Create** button.
+1. From the **Cloud Console --> IoT Core.**
+2. If you see Enable prompt ,click Enable API button.
+3. Create a Registry for the IoT device.
+4. Enter 'heartrate' for the RegistryID.
+5. Select Region ,disable HTTP in Protocol section.
+6. Select the Pub/Sub topic which is created in Pub/Sub topic earlier and click on **Create** button.
 
 * [Create Registry.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/createregistry.PNG)
 
@@ -100,10 +100,10 @@ The Registry is now ready for the devices to be added.
 
 ## Adding device to Registry
 &emsp;&emsp;From the Cloud Console , Select IoT Core
-* Click on the **Devices** tab and Click **Create A Device**.
-* Enter 'raspberryHeartRate' as DeviceID.
-* For Public key Format select **ES256.**
-* We can choose either manual,copy and paste the value of the key or upload the public key file.
+1. Click on the **Devices** tab and Click **Create A Device**.
+2. Enter 'raspberryHeartRate' as DeviceID.
+3. For Public key Format select **ES256.**
+4. We can choose either manual,copy and paste the value of the key or upload the public key file.
 
 * [Create Device.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/createdevice.PNG)
 
