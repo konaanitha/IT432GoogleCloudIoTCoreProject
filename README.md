@@ -153,6 +153,8 @@ The Registry is now ready for the devices to be added.
   * Run an SQL statement , that selects all the data from the BigQuery table.
   *  Click **RUN QUERY** button.
 
+* [Query Results](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Query%20results.PNG)
+
  If you see the results then the data is flowing.
  
   ## Visualize the data
@@ -160,6 +162,8 @@ The Registry is now ready for the devices to be added.
    * Highlight the two columns that cointain the time collected and heartrate. 
    * Select Insert and select chart 'Clustered Column Chart'.
    * The chart should now display a visualization of heart over time.
+   
+   * [Data Visualization in Excel sheet](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/visualizeData.PNG)
 
  ## Summary:
  &emsp;&emsp; In this, I have used Google IOt core , a fully managed device to secure IoT devices , the messages which are streamed form the IoT device are published in Pub/Sub topic . I created a Dataflow job from Template , that creates a Pipeline stream which reads the messages from the Pub/Sub and writes into BigQuery Table.The Query results from the BigQuery  table are saved into Excel or Google sheets for quick data visualisation.
