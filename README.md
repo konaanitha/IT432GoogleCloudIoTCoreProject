@@ -18,7 +18,7 @@
 6. Heart Rate sensor
 
 ## Software
-1. Raspeberry OS
+1. Raspeberry OS/Raspberry Pi ImageViewer v1.6
 2. Putty for Windows/Terminal for Mac
 3. Excell or Google sheets
 
