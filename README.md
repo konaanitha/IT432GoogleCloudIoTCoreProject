@@ -7,7 +7,7 @@
 &emsp; &emsp; Google Cloud Platform is an Infrastructure as a Service (IaaS), in which the cloud maintains all the core infrastructure, hardware, software and servers in the cloud on behalf of the user. All services used in the Google Cloud are reliable and scalable.
 
 ##  Overview
-&emsp; &emsp; Here Raspberry PI, an IoT device captures the heartrate, with the IoT Core securely publish the data to Pub/Sub topic, which is a message queue, where the data will be transferred into a data warehouse with the help of a data pipeline created by the components of Google Cloud. The result data can be visualized using data visualization tools such as Excel or google sheets, etc.,.
+&emsp; &emsp; Here Raspberry Pi, an IoT device captures the heartrate, with the IoT Core securely publish the data to Pub/Sub topic, which is a message queue, where the data will be transferred into a data warehouse with the help of a data pipeline created by the components of Google Cloud. The result data can be visualized using data visualization tools such as Excel or google sheets, etc.,.
 
 ##  Hardware Requirements
 1. Raspberry Pi, SD card
