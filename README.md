@@ -64,19 +64,19 @@ We have now The Pub/Sub subscription to pull IoT messages from.
 &emsp;&emsp;Dataflow is cloud based data processing service used for batch and real time data. A Dataflow template will be used to create a process that monitors a Pub/Sub topic for incoming messages and then moves them to BigQuery. The data from the Dataflow will be stored in temporary file, and the location will be provided in Cloud Storage.
 
  **To Create a file in Cloud Storage:**
-1. From the Cloud Console Menu Select **Storage-->Browser -->click on Create Bucket.**
+1. From the Cloud Console Menu Select **Storage-->Browser --> click on Create Bucket.**
 2. Enter the **Name** of the bucket . The Bucket name is unique across the Google Cloud.
 3. Select the region where your project resides and click **Create Bucket** button.
 
 * [Create Bucket.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/create%20%20bucket.PNG)
 
  **To Create a Dataflow Job:**
-1. From the Cloud Console Select Dataflow -->Jobs.
+1. From the Cloud Console Select Dataflow --> Jobs.
 2. Click on on **Create Job from Template.**
 3. Enter 'heart-streaming'as Job name.
-4. Select the region make sure it matches the region where the project resides.
+4. Select the region, make sure it matches the region, where the project resides.
 5. Select the dataflow template as **'Pub/sub Subscription to Big Query’.**
-6. Enter the details in the other fields ,making sure they align with the name of the Pub/Sub subscription,BigQuery dataset and tablename and Cloud Storage file.
+6. Enter the details in the other fields, making sure they align with the name of the Pub/Sub subscription, BigQuery dataset and tablename and Cloud Storage file.
 7. Click on **RUN JOB.**
 
 * [Create Dataflow Job.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/create_dataflow%20job.PNG)
@@ -88,22 +88,22 @@ The Dataflow job has started and it made a connection between Pub/Sub and BigQue
 ## Create IoT Core Registry
 &emsp;&emsp; Google cloud IoT Core is a fully managed service which is used for securely connecting and management of IoT devices. It is a gateway to Google Cloud Platform.
 1. From the **Cloud Console --> IoT Core.**
-2. If you see Enable prompt ,click Enable API button.
+2. If you see Enable prompt, click Enable API button.
 3. Create a Registry for the IoT device.
 4. Enter 'heartrate' for the RegistryID.
-5. Select Region ,disable HTTP in Protocol section.
-6. Select the Pub/Sub topic which is created in Pub/Sub topic earlier and click on **Create** button.
+5. Select Region, disable HTTP in Protocol section.
+6. Select the Pub/Sub topic, which is created in Pub/Sub topic earlier and click on **Create** button.
 
 * [Create Registry.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/createregistry.PNG)
 
 The Registry is now ready for the devices to be added.
 
 ## Adding device to Registry
-&emsp;&emsp;From the Cloud Console , Select IoT Core
+&emsp;&emsp;From the Cloud Console, Select IoT Core
 1. Click on the **Devices** tab and Click **Create A Device**.
 2. Enter 'raspberryHeartRate' as DeviceID.
 3. For Public key Format select **ES256.**
-4. We can choose either manual,copy and paste the value of the key or upload the public key file.
+4. We can choose either "Enter manually", copy and paste the value of the key or upload the public key file.
 
 * [Create Device.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/createdevice.PNG)
 
@@ -117,25 +117,25 @@ The Registry is now ready for the devices to be added.
   
   ## Configure the Raspberry PI:
   &emsp;&emsp; The following are the steps followed in configuring the Pi
-  1. Connect the monitor,keyboard,mouse, heartrate Sensor and finally power adapter.
-  2. After the Pi boots up,select the Raspian operating system .Select the desired language and install it.
+  1. Connect the monitor, keyboard, mouse, heartrate Sensor and finally power adapter.
+  2. After the Pi boots up, select the Raspian operating system. Select the desired language and install it.
   3. Click on the WI-FI icon --> select a network and enter the password for the network. 
-  4.  Click on the Raspberry Icon-->Preferences-->Raspberry Pi Configuration.
+  4.  Click on the Raspberry Icon --> Preferences --> Raspberry Pi Configuration.
   5.  Select **Interface** tab and enable **SSH**.
   6.  From the Localization tab, set the Locale and TimeZone.
   7.  Allow the Pi to Reboot.
   8.  Make sure all of the software on the Pi is upto date.
   9.  Open the terminal and type 'Ifconfig' command, which gives the IP address of the Pi.
-  10.  Install Putty in your local machine and make a connection to Raspberry Pi wireless by typing the IPaddress of Pi in the host name or Ip address.
+  10.  Install Putty in your local machine and make a wireless connection to Raspberry Pi, by typing the IPaddress of Pi in the host name or IP address.
   
   ## Start the Data
   ### Getting Streaming data from a Raspberry Pi
-  &emsp;&emsp; After establishing the connection of Pi from the local machine using Putty enter Username and password.
-  * First, move to the home directory of Raspberry pi with the following:		
+  &emsp;&emsp; After establishing the connection of Pi from the local machine, using Putty enter Username and password.
+  * First, move to the home directory of Raspberry Pi with the following:		
   
      > cd /home/pi/iotcore-heartrate 
      > 
-   * Run the following script by changing to which match the project.  
+   * Run the following script by changing the details, which matches the project.  
    
    >
    > **python checkHeartRate.py --project_id=myproject --registry_id=myregistry --device_id=mydevice**
@@ -145,28 +145,28 @@ The Registry is now ready for the devices to be added.
 
   ## Check the Data is Flowing
   &emsp;&emsp;We need to make sure that the data is flowing into BigQuery Table.
-  * From the Cloud Console Menu -->Select BigQuery .
+  * From the Cloud Console Menu --> Select BigQuery.
   * Click on the arrow next to Project name, click on the Dataset, then on the table.
 
 * [Heartratetable.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/heartratetable%20data.PNG)
   * Click on the **Query Table** button.
-  * Run an SQL statement , that selects all the data from the BigQuery table.
+  * Run an SQL statement, that selects all the data from the BigQuery table.
   *  Click **RUN QUERY** button.
 
 * [Query Results](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Query%20results.PNG)
 
- If you see the results then the data is flowing.
+ If you see the results then the data is flowing from IoT device to BigQuery table.
  
   ## Visualize the data
-   &emsp;&emsp;The Query results ,which  are retrieved from RUN Query can be saved in either EXcel file or Google sheets by clicking 'SAVE RESULTS'.
+   &emsp;&emsp;The Query results, which are retrieved from RUN Query can be saved in either Excel file or Google sheets, by clicking 'SAVE RESULTS'.
    * Highlight the two columns that cointain the time collected and heartrate. 
    * Select Insert and select chart 'Clustered Column Chart'.
-   * The chart should now display a visualization of heart over time.
+   * The chart should now display a visualization of heartrate over timecollected.
    
    * [Data Visualization in Excel sheet](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/visualizeData.PNG)
 
  ## Summary:
- &emsp;&emsp; In this, I have used Google IOT Core , a fully managed device to secure IoT devices , the messages which are streamed form the IoT device are published in Pub/Sub topic . I created a Dataflow job from Template , that creates a Pipeline stream which reads the messages from the Pub/Sub and writes into BigQuery Table.The Query results from the BigQuery  table are saved into Excel or Google sheets for quick data visualisation.
+ &emsp;&emsp; In this, I have used Google IOT Core, a fully managed device to secure IoT devices, the messages which are streamed form the IoT device are published in Pub/Sub topic. I have created a Dataflow job from Template, that creates a Pipeline stream which reads the messages from the Pub/Sub and writes into a BigQuery Table. The Query results from the BigQuery table are saved into Excel document for quick data visualization.
  
  ## References:
  * [Raspberry Pi Getting started/Setup](https://www.youtube.com/watch?v=BpJCAafw2qE)
