@@ -94,7 +94,7 @@ The Dataflow job has started and it made a connection between Pub/Sub and BigQue
 * Select Region ,disable HTTP in Protocol section.
 * Select the Pub/Sub topic which is created in Pub/Sub topic earlier and click on **Create** button.
 
-* [Create Rergistry.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/createregistry.PNG)
+* [Create Registry.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/createregistry.PNG)
 
 The Registry is now ready for the devices to be added.
 
@@ -105,7 +105,7 @@ The Registry is now ready for the devices to be added.
 * For Public key Format select **ES256.**
 * We can choose either manual,copy and paste the value of the key or upload the public key file.
 
-* [Create Device.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/createdevice.PNG
+* [Create Device.png](https://github.com/konaanitha/IT432GoogleCloudIoTCoreProject/blob/main/Images/createdevice.PNG)
 
 *  The following commands are used to generate ES 256 key pair in Google CLoud Shell
  
